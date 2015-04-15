@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E625F58-1312-447B-8393-98087031E46D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebSite.Admin</RootNamespace>
+    <AssemblyName>WebSite.Admin</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder">
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.ObjectBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WebSite.Lib\DLL\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\AdInfos.cs" />
+    <Compile Include="DAL\Advertisement.cs" />
+    <Compile Include="DAL\ALabel.cs" />
+    <Compile Include="DAL\AttaList.cs" />
+    <Compile Include="DAL\BanKAccountInfo.cs" />
+    <Compile Include="DAL\BankAccountInList.cs" />
+    <Compile Include="DAL\BankAccountOperateList.cs" />
+    <Compile Include="DAL\BankCardInfo.cs" />
+    <Compile Include="DAL\BankCardOperateList.cs" />
+    <Compile Include="DAL\BankPayList.cs" />
+    <Compile Include="DAL\CarInfo.cs" />
+    <Compile Include="DAL\FactroyInfo.cs" />
+    <Compile Include="DAL\InfoLabel.cs" />
+    <Compile Include="DAL\Infos.cs" />
+    <Compile Include="DAL\InfoType.cs" />
+    <Compile Include="DAL\LogList.cs" />
+    <Compile Include="DAL\Logs.cs" />
+    <Compile Include="DAL\Message.cs" />
+    <Compile Include="DAL\MessageUser.cs" />
+    <Compile Include="DAL\OrgArea.cs" />
+    <Compile Include="DAL\OrgCustomer.cs" />
+    <Compile Include="DAL\OrgCustomerAddress.cs" />
+    <Compile Include="DAL\OrgEmployees.cs" />
+    <Compile Include="DAL\OrgOrganize.cs" />
+    <Compile Include="DAL\OrgPkgList.cs" />
+    <Compile Include="DAL\OrgProviderInfo.cs" />
+    <Compile Include="DAL\OrgUsers.cs" />
+    <Compile Include="DAL\OrgWorkStation.cs" />
+    <Compile Include="DAL\RegisterUserInfo.cs" />
+    <Compile Include="DAL\RootPackage.cs" />
+    <Compile Include="DAL\StaPackage.cs" />
+    <Compile Include="DAL\SWCompany.cs" />
+    <Compile Include="DAL\TempInfo.cs" />
+    <Compile Include="DAL\TemplatePar.cs" />
+    <Compile Include="DAL\Templates.cs" />
+    <Compile Include="DAL\TmpInfoList.cs" />
+    <Compile Include="DAL\VisitLog.cs" />
+    <Compile Include="DAL\WorStaUserAcc.cs" />
+    <Compile Include="Model\AdInfos.cs" />
+    <Compile Include="Model\Advertisement.cs" />
+    <Compile Include="Model\ALabel.cs" />
+    <Compile Include="Model\AttaList.cs" />
+    <Compile Include="Model\BanKAccountInfo.cs" />
+    <Compile Include="Model\BankAccountInList.cs" />
+    <Compile Include="Model\BankAccountOperateList.cs" />
+    <Compile Include="Model\BankCardInfo.cs" />
+    <Compile Include="Model\BankCardOperateList.cs" />
+    <Compile Include="Model\BankPayList.cs" />
+    <Compile Include="Model\CarInfo.cs" />
+    <Compile Include="Model\FactroyInfo.cs" />
+    <Compile Include="Model\InfoLabel.cs" />
+    <Compile Include="Model\Infos.cs" />
+    <Compile Include="Model\InfoType.cs" />
+    <Compile Include="Model\LogList.cs" />
+    <Compile Include="Model\Logs.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Model\MessageUser.cs" />
+    <Compile Include="Model\OrgArea.cs" />
+    <Compile Include="Model\OrgCustomer.cs" />
+    <Compile Include="Model\OrgCustomerAddress.cs" />
+    <Compile Include="Model\OrgEmployees.cs" />
+    <Compile Include="Model\OrgOrganize.cs" />
+    <Compile Include="Model\OrgPkgList.cs" />
+    <Compile Include="Model\OrgProviderInfo.cs" />
+    <Compile Include="Model\OrgUsers.cs" />
+    <Compile Include="Model\OrgWorkStation.cs" />
+    <Compile Include="Model\RegisterUserInfo.cs" />
+    <Compile Include="Model\RootPackage.cs" />
+    <Compile Include="Model\StaPackage.cs" />
+    <Compile Include="Model\SWCompany.cs" />
+    <Compile Include="Model\SYS_AdminUser.cs" />
+    <Compile Include="Model\SYS_DepartmentInfo.cs" />
+    <Compile Include="Model\SYS_PageConfig.cs" />
+    <Compile Include="Model\SYS_RoleForPage.cs" />
+    <Compile Include="Model\SYS_RoleInfo.cs" />
+    <Compile Include="Model\SYS_UserForConsultant.cs" />
+    <Compile Include="Model\SYS_UserForRole.cs" />
+    <Compile Include="Model\S_City.cs" />
+    <Compile Include="Model\S_District.cs" />
+    <Compile Include="Model\S_Province.cs" />
+    <Compile Include="Model\TempInfo.cs" />
+    <Compile Include="Model\TemplatePar.cs" />
+    <Compile Include="Model\Templates.cs" />
+    <Compile Include="Model\TmpInfoList.cs" />
+    <Compile Include="Model\UserAccount.cs" />
+    <Compile Include="Model\VisitLog.cs" />
+    <Compile Include="Model\WorStaUserAcc.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DAL\SYS_AdminUser.cs" />
+    <Compile Include="DAL\SYS_DepartmentInfo.cs" />
+    <Compile Include="DAL\SYS_PageConfig.cs" />
+    <Compile Include="DAL\SYS_RoleForPage.cs" />
+    <Compile Include="DAL\SYS_RoleInfo.cs" />
+    <Compile Include="DAL\SYS_UserForConsultant.cs" />
+    <Compile Include="DAL\SYS_UserForRole.cs" />
+    <Compile Include="DAL\S_City.cs" />
+    <Compile Include="DAL\S_District.cs" />
+    <Compile Include="DAL\S_Province.cs" />
+    <Compile Include="DAL\UserAccount.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\WebSite.DBUtilities\WebSite.DBUtilities.csproj">
+      <Project>{c5b738c6-27d2-497e-8fdb-0b59e27c1d9b}</Project>
+      <Name>Wiimedia.DBUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

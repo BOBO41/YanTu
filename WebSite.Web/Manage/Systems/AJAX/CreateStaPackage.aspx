@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateStaPackage.aspx.cs" Inherits="WebSite.Web.Manage.Systems.AJAX.CreateStaPackage" %>

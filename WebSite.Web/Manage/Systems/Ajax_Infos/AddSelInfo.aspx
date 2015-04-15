@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddSelInfo.aspx.cs" Inherits="WebSite.Web.Manage.Systems.Ajax_Infos.AddSelInfo" %>

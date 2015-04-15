@@ -1,0 +1,327 @@
+@charset "UTF-8";
+/* 会员管理 */
+
+@import url("../js/bootstrap/css/bootstrap.min.css");
+@import url("../js/bootstrap/css/bootstrap3btn.css");
+@import url("../js/bootstrap/css/bootstrap-icons.css");
+body {
+	background-color: #F4F4F4;
+	padding: 8px;
+	margin: 0px;
+}
+body h5 {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+.list-group {
+	padding: 0px;
+	list-style-type: none;
+	overflow: hidden;
+	zoom: 1;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+}
+.list-group li a {
+	display: block;
+	padding: 15px;
+	color: #333;
+	text-decoration: none;
+	text-align: center;
+	background-color: #FFF;
+	box-shadow: 1px 1px 1px 1px #eee;
+	-moz-box-shadow: 1px 1px 1px 1px #eee;
+	-moz-border-radius:3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #D6D6D6;
+}
+.list-group li a:hover{ background-color:#efefef;}
+.list-group li a:active{ background-color:#eaeaea;}
+.list-group li.first  {
+	float: left;
+	width: 49%;
+}
+.list-group li.last {
+	float: right;
+	width: 49%;
+}
+.list-group a strong {
+	color: #F00;
+	display: block;
+	text-align: center;
+}
+.listView {
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+}
+.listView li a {
+	display: block;
+	padding: 13px;
+	text-decoration: none;
+	color: #333;
+	background-color: #FFF;
+	margin-bottom: -1px;
+	border: 1px solid #D6D6D6;
+	line-height: 18px;	
+	
+}
+.listView li a strong {
+	font-weight: normal;
+}
+.listView li.first a{
+	box-shadow: 1px 1px 1px 1px #eee;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-moz-box-shadow: 1px 1px 1px 1px #eee;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;	
+	
+	}
+.listView li.last a{
+	box-shadow: 1px 1px 1px 1px #eee;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-moz-box-shadow: 1px 1px 1px 1px #eee;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+.listView li a:hover{
+	background-color: #F4F4F4;
+	}
+.listView li a:active{
+	background-color:#eaeaea;}
+.listView li a .count {
+	display: block;
+	float: right;
+	border-radius: 8px;
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size: 12px;
+	background-color: #F00;
+	color: #FFF;
+	line-height: 17px;
+}
+.listView li a  i.arrow {
+	float: right;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+.listView li a i {
+	margin-right: 8px;
+}
+.listBox,
+.panel {
+	background-color: #FFF;
+	box-shadow: 1px 1px 1px 1px #eee;
+	-moz-box-shadow: 1px 1px 1px 1px #eee;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #D6D6D6;
+	margin-bottom: 15px;
+}
+.listBox{padding: 15px;}
+.panel{ }
+.listBox h4 {
+	line-height: 25px;
+	margin: 0px;
+	height: 25px;
+}
+.item-jg {
+	font-size: 12px;
+	overflow: hidden;
+	zoom: 1;
+}
+.item-jg .cb {
+	float: left;
+	width: 25px;
+}
+.item-jg .pic {
+	float: left;
+	width: 25%;
+}
+.item-jg .pic img {
+	max-width: 50px;
+}
+.item-jg .con {
+	margin-left: 90px;
+}
+.item-jg .con h4 {
+	font-size: 14px;
+	line-height: 15px;
+	margin-bottom: 8px;
+	height: auto;
+}
+.item-jg .con p {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 8px;
+	margin-left: 0px;
+}
+.item-jg .con .price strong {
+	color:#F00;
+}
+.selected  {
+	background-color: #ffffed;
+}
+.showData {
+}
+.showData th {
+	text-align: left;
+	line-height: 25px;
+	font-size: 12px;
+	color: #999;
+}
+.showData td {
+	font-size: 12px;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #D6D6D6;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.showData  strong {
+	font-size: 14px;
+}
+.showData  em {
+	font-size: 14px;
+	font-style: normal;
+	color: #F00;
+}
+.tz {
+}
+.tz li a strong {
+	display: block;
+	height: 25px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.tz li a span{
+	font-size:12px;
+	color:#999;}
+.tz.new li a {
+	background-color: #FFFFEB;
+}
+.tz.new li a:active {
+	background-color: #ebebd8;
+}
+.icon-phone{
+	background-image: url(images/tel.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.ts-jg {
+	text-align: center;
+	height: 400px;
+	padding-top: 50px;
+}
+.ts-jg .ic {
+	margin: auto;
+	height: 100px;
+	width: 100px;
+	background-image: url(images/jiu.png);
+	background-repeat: no-repeat;
+}
+.ts-jg h1 {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #999;
+	text-shadow: -1px -1px 1px #fff;
+}
+.panel {
+	background-color: #FFF;
+	margin-bottom: 8px;
+}
+.panel.active .panel-header{
+	background-image: url(images/pannel-header.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+.panel.active .panel-header strong{
+	background-image: url(images/arrow-down.png);
+}
+.panel .panel-body{
+	padding: 15px;
+	display: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #D6D6D6;
+}
+.panel .panel-header {
+	line-height: 30px;
+	cursor: pointer;
+	padding-top: 8px;
+	padding-right: 15px;
+	padding-bottom: 8px;
+	padding-left: 15px;
+	color: #999;
+}
+.panel .panel-header strong {
+	color: #F00;
+	background-image: url(images/arrow-right.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 20px;
+}
+.panel .panel-header em {
+	font-style: normal;
+	color: #000;
+}
+
+.page-header {
+	line-height: 40px;
+	height: 40px;
+	position: fixed;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 9999;
+	background-image: url(images/header-bar.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	background-color: #6A696A;
+}
+.page-header h1 {
+	font-size: 16px;
+	color: #FFF;
+	text-align: center;
+	margin: 0px;
+	line-height: 40px;
+	width: auto;
+}
+.page-header .back {
+	left: 8px;
+}
+.page-header a {
+	position: absolute;
+	top: 6px;
+	display: inline-block;
+	line-height: 15px;
+	color: #FFF;
+	padding: 5px;
+	height: 15px;
+	width: auto;
+	background-color: #666;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #333;
+	background-image: url(images/header-bar.png);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+.page-header a:active {
+	background-color: #000;
+}
+.page-content {
+	margin-top: 40px;
+	padding: 8px;
+}

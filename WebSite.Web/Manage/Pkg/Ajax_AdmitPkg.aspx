@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ajax_AdmitPkg.aspx.cs" Inherits="WebSite.Web.Manage.Pkg.Ajax_AdmitPkg" %>

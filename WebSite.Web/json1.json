@@ -1,0 +1,139 @@
+﻿{
+    "pack_info": {
+        "pack_id": "1",
+        "pack_name": "12月刊",
+        "railway_bureau_id": "",
+        "railway_bureau": "",
+        "create_time": "2014-12-21 23:47:51"
+    },
+    "ad_info": {
+        "ad_interval": "2700",
+        "ad_list": [ ]
+    },
+    "station_list": [
+        {
+            "station_id": "1",
+            "station_name": "陕西分站",
+            "station_category_list": [
+                { "category_id": "42", "category_name": "美食" }
+            ]
+        }
+    ],
+    "category_list": [
+        {
+            "category_id": "42",
+            "category_name": "美食",
+            "category_icon_normal": "image/e9d2b3ab-ca19-1a77-0507-a69587b2049aNoPhoto.jpg",
+            "category_icon_highlight": "image/e9d2b3ab-ca19-1a77-0507-a69587b2049aNoPhoto.jpg",
+            "category_page_list": [
+                { "page_id": "64" },
+                { "page_id": "65" },
+                { "page_id": "68" },
+                { "page_id": "69" }
+
+            ]
+        }
+    ],
+    "page_list": [
+        {
+            "page_id": "64",
+            "page_layout_type": "1",
+            "page_module_list": [
+
+                {
+                    "module_id": "1.1",
+                    "module_type": "news",
+                    "module_title": "资讯1",
+                    "module_image_path": "image/814a97ad-d5df-e983-eb17-be16ca17d423NoPhoto.jpg",
+                    "module_topic_id": "59",
+                    "module_news_id": "59",
+                    "module_video_path": ""
+                }
+            ]
+        },
+        {
+            "page_id": "65",
+            "page_layout_type": "1",
+            "page_module_list": [
+                { "module_id": "1.1",
+                    "module_type": "topic",
+                    "module_title": "专题1",
+                    "module_image_path": "image/e383f1e5-71bf-efcf-b900-164d1abc1e1aNoPhoto.jpg",
+                    "module_topic_id": "61",
+                    "module_news_id": "61", 
+                    "module_video_path": "" }
+            ]
+        },
+        {
+            "page_id": "68",
+            "page_layout_type": "1",
+            "page_module_list": [ ]
+        },
+        {
+            "page_id": "69",
+            "page_layout_type": "1",
+            "page_module_list": [ ]
+
+        },
+        {
+            "page_id": "72",
+            "page_layout_type": "1",
+            "page_module_list": [
+
+            ]
+        }
+    ],
+    "topic_list": [
+        {
+            "topic_id": "61",
+            "topic_title": "专题1",
+            "topic_page_list": [
+                { "page_id": "72" }
+
+            ]
+        }
+    ],
+    "news_list": [
+
+        {
+            "news_id": "59",
+            "news_title": "资讯1",
+            "content_list": [
+                { "content_id": "71" },
+                { "content_id": "76" },
+                { "content_id": "75" }
+
+            ]
+        }
+    ],
+    "content_list": [
+        {
+            "content_id": "71",
+            "content_type": "text",
+            "content_image_path": "image/53386641-c4f3-151a-ab7b-8d363880f467NoPhoto.jpg",
+            "text_info": {
+
+                "text": "图文1",
+                "text_position": "3",
+                "font_size": "22",
+                "text_color": "#0000ff"
+            },
+            "hot_list": [ ]
+        },
+        {
+            "content_id": "75",
+            "content_type": "image",
+            "content_image_path": "image/",
+            "text_info": { },
+            "hot_list": [ ]
+
+        },
+        {
+            "content_id": "76",
+            "content_type": "image",
+            "content_image_path": "image/f022fcd9-4f83-fc0f-e086-6d6293fa87f9NoPhoto.jpg",
+            "text_info": { },
+            "hot_list": [ ]
+        
+            }
+    ] }
